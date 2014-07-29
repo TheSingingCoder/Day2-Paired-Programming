@@ -1,0 +1,27 @@
+﻿@model Day2PairedProgramming.Models.IndexVM
+
+@foreach (var Song in Model.PopSongs)
+{
+    @Song.Song <br/>
+    @Song.Artist <br/>
+    @Song.Decade <br/>
+}
+
+@foreach (var Song in Model.RockSongs)
+{
+    @Song.Song <br/>
+    @Song.Artist <br/>
+    @Song.Decade <br/>
+}
+
+@Model.ClassicalSong1.Song;
+@Model.ClassicalSong1.Composer;
+@Model.ClassicalSong1.Period;
+
+@Model.FunkSong1.Song;
+@Model.FunkSong1.Artist;
+@Model.FunkSong1.Year;
+
+@Model.JazzSong1.Song;
+@Model.JazzSong1.Composer;
+@Model.JazzSong1.Year;
